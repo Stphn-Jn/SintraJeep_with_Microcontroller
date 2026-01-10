@@ -1,4 +1,4 @@
-# 🇵🇭 Project Jeepney: Smart Sintraboard RC
+ Project Jeepney: Smart Sintraboard RC
 
 A DIY, scale-model Jeepney built from the ground up using **Sintraboard** and powered by **Arduino/Microcontrollers**. This project aims to replicate the iconic Philippine Jeepney with fully functional steering, drivetrain, and scale lighting.
 
