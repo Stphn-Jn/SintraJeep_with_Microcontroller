@@ -1,64 +1,82 @@
- Project Jeepney: Smart Sintraboard RC
+# SintraJeep-Project: Custom Sintraboard Vehicle
 
-A DIY, scale-model Jeepney built from the ground up using **Sintraboard** and powered by **Arduino/Microcontrollers**. This project aims to replicate the iconic Philippine Jeepney with fully functional steering, drivetrain, and scale lighting.
+A comprehensive DIY engineering project focused on building a fully functional, scale-model Jeep from scratch. This project combines manual craftsmanship using **Sintraboard** (PVC Foam Board) with embedded systems and custom PCB design to create a vehicle that mimics real-world automotive mechanics.
 
-## 🚀 Overview
+## 🚀 Project Vision
 
-The goal of this project is to create a "toy" jeep that functions like a real vehicle. Unlike off-the-shelf RC cars, this build focuses on **scratch-building** the body and implementing custom logic for realistic features (e.g., blinkers, brake lights, and speed control).
+The **SintraJeep** is more than just a toy; it is an exploration into vehicle dynamics, structural design, and electronics. By using Sintraboard as the primary material, the build remains lightweight and easy to modify, while the microcontroller integration allows for realistic control over steering, speed, and scale-model lighting.
 
 ## 🛠 Features
 
-* **Custom Chassis:** Hand-cut and heat-bent Sintraboard body.
-* **Microcontroller Powered:** Managed by an Arduino (or ESP32).
-* **Proportional Control:** Realistic steering and throttle (not just ON/OFF).
-* **Scale Lighting:** Working headlights, turn signals, and interior cabin lights.
-* **Expandable:** Future support for Bluetooth or Wi-Fi mobile app control.
-
----
-
-## 🏗 Hardware Components
-
-| Component | Description |
-| --- | --- |
-| **Microcontroller** | Arduino Nano / Uno |
-| **Chassis Material** | 3mm or 5mm Sintraboard |
-| **Motor Driver** | L298N or L293D |
-| **Drivetrain** | DC Gear Motors |
-| **Steering** | SG90 Servo Motor |
-| **Power** | Li-ion 18650 Battery Pack |
+* **Scratch-Built Chassis:** Every part is hand-cut and heat-molded from Sintraboard sheets.
+* **Proportional Steering:** A dedicated servo-motor system for precise front-wheel turning.
+* **Custom PCB Design:** Moving beyond breadboards with a dedicated circuit designed in KiCad.
+* **Smart Lighting:** Logic-controlled LEDs for headlights, tail lights, and signals.
+* **CAD Guided:** Built using precise 2D layouts and DWG sketches for accuracy.
 
 ---
 
 ## 📂 Repository Structure
 
-* `/code` — Arduino (.ino) sketches and control logic.
-* `/schematics` — Wiring diagrams and circuit layouts.
-* `/docs` — Sintraboard cutting measurements and assembly guides.
-* `/media` — Photos and videos of the build progress.
+This repository is organized into specific modules to help you follow the build process:
 
-## 🔧 Installation & Setup
+* **`/Documentation`**: Detailed logs on how the vehicle was built, the step-by-step process, and design challenges.
+* **`/DWG`**: Contains 2D sketches, technical drawings, and every layout used for cutting the Sintraboard.
+* **`/Sample`**: High-quality pictures and videos of the actual project at various stages of completion.
+* **`/Codes`**: Arduino source code, including motor logic, steering calibration, and lighting sequences.
+* **`/Schematics`**: Electronic design files made with **KiCad**, including circuit diagrams and future PCB layouts.
 
-1. **Mechanical Build:** Assemble the Sintraboard chassis using cyanoacrylate (super glue).
-2. **Wiring:** Connect the motor driver to the Arduino digital pins and the steering servo to a PWM-enabled pin.
-3. **Upload Code:**
-* Open the `.ino` file in the Arduino IDE.
-* Ensure the `Servo.h` library is installed.
-* Select your board and port, then click **Upload**.
+---
+
+## 🏗 Hardware Components
+
+### 1. Structure & Body
+
+* **Material:** 3mm & 5mm Sintraboard (PVC Foam Board)
+* **Adhesive:** Cyanoacrylate (Super Glue) + Baking soda for structural reinforcement.
+* **Hardware:** M3 Screws for mounting the motors and PCB.
+
+### 2. Electronics (The Brain)
+
+* **Microcontroller:** Arduino (Uno/Nano) or compatible microcontrollers.
+* **Motor Control:** L298N / MX1508 or custom PCB driver.
+* **Steering:** SG90 / MG90S Micro Servo.
+* **Design Tool:** KiCad (for Schematic Capture and PCB Routing).
+
+---
+
+## 🔧 Installation & Usage
+
+1. **Fabrication:** Open the files in `/DWG` to view the cutting layouts. Apply these to your Sintraboard sheets.
+2. **Assembly:** Refer to the guides in `/Documentation` to see how the pieces fit together.
+3. **Circuitry:** Check `/Schematics` for the KiCad files. If you are using the PCB design, order the board using the provided Gerber files.
+4. **Software:** * Open the Arduino IDE.
+* Load the `.ino` files from `/Codes`.
+* Connect your board and **Upload**.
 
 
 
-## 📝 Roadmap
+---
 
-* [ ] Complete Sintraboard chassis assembly
-* [ ] Implement motor H-Bridge logic
-* [ ] Fine-tune Servo steering angles
-* [ ] Install scale LED lighting system
-* [ ] Add Bluetooth/Remote control functionality
+## 📝 Development Roadmap
+
+* [x] Initial 2D Design (DWG)
+* [ ] Chassis Fabrication (Sintraboard)
+* [ ] Steering and Drivetrain Integration
+* [ ] KiCad Schematic Design
+* [ ] Custom PCB Fabrication and Testing
+* [ ] Final Assembly and Scale Detail Finishing
 
 ## 🤝 Contributing
 
-Suggestions for improving the code or chassis design are welcome! Feel free to fork this repo and submit a pull request.
+If you are building your own Sintraboard vehicle or have suggestions for the PCB design, feel free to fork this repo and submit a pull request!
 
 ## 📜 License
 
-This project is open-source under the [MIT License](https://www.google.com/search?q=LICENSE).
+This project is licensed under the **MIT License**.
+
+---
+
+**Crafting the future of DIY RC vehicles, one Sintraboard sheet at a time.**
+
+---
