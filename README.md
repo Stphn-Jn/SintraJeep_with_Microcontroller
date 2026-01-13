@@ -1,4 +1,4 @@
-# SintraJeep-Project
+# SintraJeepney-Project
 
 A comprehensive DIY engineering project focused on building a fully functional, scale-model Jeep from scratch. This project combines manual craftsmanship using **Sintraboard** (PVC Foam Board) with embedded systems and custom PCB design to create a vehicle that mimics real-world automotive mechanics.
 
